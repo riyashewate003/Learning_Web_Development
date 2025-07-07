@@ -296,9 +296,52 @@ h2{
     margin-top: 0.60rem;
 }
 
+.player-control-icons:hover{
+    opacity: 1.5;
+    transition-duration: 0.5s;
+}
+
 .player-control{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+}
+
+.song-progress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 90px;
+    height: 0.25rem;
+    margin-top: 0.8rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    background-color: #1bd760;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-top: -4px; /* ✅ aligns thumb with track vertically */
+    position: relative;
+    z-index: 2;
+}
+
+.time{
+    font-size: 0.7rem;
+    margin-top: 0.8rem;
 }
